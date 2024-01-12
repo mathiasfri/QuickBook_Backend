@@ -2,13 +2,11 @@ package dat3.QuickBook.api;
 
 import dat3.QuickBook.dto.GuestRequest;
 import dat3.QuickBook.service.GuestService;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/guest")
+@CrossOrigin
 public class GuestController {
     GuestService guestService;
 

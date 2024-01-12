@@ -24,7 +24,7 @@ public class Hotel {
     private String city;
     private String zip;
     private String country;
-    @OneToMany(mappedBy = "hotel")
+    @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Room> rooms;
 
     private LocalDateTime created;
