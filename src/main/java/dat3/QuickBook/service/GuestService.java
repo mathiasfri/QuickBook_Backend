@@ -21,6 +21,7 @@ public class GuestService {
         guest.setFirstName(body.getFirstName());
         guest.setLastName(body.getLastName());
         guest.setEmail(body.getEmail());
+        guest.setPhoneNumber(body.getPhoneNumber());
         guest.setCreated(body.getCreated());
         guest.setUpdated(body.getUpdated());
         return new GuestResponse(guestRepository.save(guest));

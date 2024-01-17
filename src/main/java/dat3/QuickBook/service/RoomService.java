@@ -20,6 +20,7 @@ public class RoomService {
         this.hotelRepository = hotelRepository;
     }
 
+
     public RoomResponse createRoom(Long hotelId, RoomRequest roomRequest) {
         Hotel hotel = hotelRepository.findById(hotelId);
 

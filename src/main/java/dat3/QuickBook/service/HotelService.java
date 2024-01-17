@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class HotelService {
     HotelRepository hotelRepository;
 
-    public HotelService(HotelRepository hotelRepository, RoomService roomService) {
+    public HotelService(HotelRepository hotelRepository) {
         this.hotelRepository = hotelRepository;
     }
 
